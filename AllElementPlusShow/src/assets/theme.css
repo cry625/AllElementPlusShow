@@ -1,0 +1,183 @@
+/* 系统主题配色 */
+/* 
+  配置规则：
+    1. 各主题配色变量名必须保持一致
+    2. 变量命名规则：
+      1) --primary: 主配色，通常用于多个页面；
+      2) --页面名：该页面适用配色；
+      3) --页面名-bg：页面背景图；
+      4) --页面名-ic：页面图标。
+*/
+
+/* 
+  浅色主题配色 
+*/
+@media (prefers-color-scheme: light) {
+  :root{
+    /* 系统中主题蓝色 */
+    --primary-theme-blue: #0984e3;
+    --primary-theme-lightblue: #74b9ff;
+    --primary-theme-white: #fff;
+    --primay-theme-grey: #efefef;
+    /* 系统中常用的tag的颜色 */
+    --primary-tag-green: #00b894;
+    --primary-tag-red: #d63031;
+    --primary-tag-yellow: #ffcc00;
+    --primary-tag-orange: #D77C28;
+    --primary-tag-bg-orange: #D77C281a;
+    --primary-tag-purple: #866ab9;
+    --primary-tag-bg-purple: #866ab91a;
+    --primary-tag-pink: #e0629d;
+    --primary-tag-bg-pink: #e0629d1a;
+  
+    --primary-tag-lightorange: #FCF6EC;
+    --primary-tag-lightgreen: #ECF6F4;
+    /* 系统中背景颜色 */
+    --primary-bg-white: #fcfcfc;
+    --primary-bg-greywhite: #f1f1f1;
+    --primary-bg-tag-white:#fcfcfc;
+    --primary-grid-bg-white:#fcfcfc;
+    --grid-bg: #fcfcfc;
+    --grid-stripe: #3c0a1e0a;
+    --primary-bg-scripteditor:#002451;
+    /* 系统中文字颜色 */
+    --primary-text: #fafafa;
+    --primary-text-skyblue: #1687f8;
+    --primary-text-blue: #3398FF;
+    --primary-text-greyblue: #4A7CAF;
+    --primary-text-black: #343434;
+    --primary-text-grey: #ccc;
+    --primary-text-organe: #ff9200;
+    --primary-text-yellow: #ffbf00;
+    --primary-text-green: #2bad75;
+    /* 系统中图标颜色 */
+    --primary-icon-grey: #757575;
+  }
+}
+/* 
+  浅色主题配色 
+*/
+:root[theme="light"] {
+  /* 系统中主题蓝色 */
+  --primary-theme-blue: #0984e3;
+  --primary-theme-lightblue: #74b9ff;
+  --primary-theme-white: #fff;
+  --primay-theme-grey: #efefef;
+  /* 系统中常用的tag的颜色 */
+  --primary-tag-green: #00b894;
+  --primary-tag-red: #d63031;
+  --primary-tag-yellow: #ffcc00;
+  --primary-tag-orange: #D77C28;
+  --primary-tag-bg-orange: #D77C281a;
+  --primary-tag-purple: #866ab9;
+  --primary-tag-bg-purple: #866ab91a;
+  --primary-tag-pink: #e0629d;
+  --primary-tag-bg-pink: #e0629d1a;
+
+  --primary-tag-lightorange: #FCF6EC;
+  --primary-tag-lightgreen: #ECF6F4;
+  /* 系统中背景颜色 */
+  --primary-bg-white: #fcfcfc;
+  --primary-bg-greywhite: #f1f1f1;
+  --primary-bg-tag-white:#fcfcfc;
+  --primary-grid-bg-white:#fcfcfc;
+  --grid-bg: #fcfcfc;
+  --grid-stripe: #3c0a1e0a;
+  --primary-bg-scripteditor:#002451;
+  /* 系统中文字颜色 */
+  --primary-text: #fafafa;
+  --primary-text-skyblue: #1687f8;
+  --primary-text-blue: #3398FF;
+  --primary-text-greyblue: #4A7CAF;
+  --primary-text-black: #343434;
+  --primary-text-grey: #ccc;
+  --primary-text-organe: #ff9200;
+  --primary-text-yellow: #ffbf00;
+  --primary-text-green: #2bad75;
+  /* 系统中图标颜色 */
+  --primary-icon-grey: #757575;
+}
+
+/* 
+  深色主题配色 
+*/
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-theme-blue: #151F30;
+    --primary-theme-lightblue: #2C3544;
+    --primary-theme-white: #5B626E;
+    --primay-theme-grey: #efefef;
+    /* 系统中常用的tag的颜色 */
+    --primary-tag-green: #00b894;
+    --primary-tag-red: #d63031;
+    --primary-tag-yellow: #ffcc00;
+    --primary-tag-orange: #D77C28;
+    --primary-tag-purple: #6f42c1;
+    --primary-tag-pink: #e83e8c;
+  
+    --primary-tag-lightorange: #FCF6EC;
+    --primary-tag-lightgreen: #ECF6F4;
+    /* 系统中背景颜色 */
+    --primary-bg-white: #fcfcfc;
+    --primary-bg-greywhite: #f1f1f1;
+    --primary-bg-tag-white:#5B626E;
+    --primary-grid-bg-white:#747d8c;
+    --grid-bg: #434B59ff;
+    --grid-stripe: #7278824f;
+    --primary-bg-scripteditor:#04101f;
+    /* 系统中文字颜色 */
+    --primary-text: #e0e0e0;
+    --primary-text-skyblue: #6183a5;
+    --primary-text-blue: #7eacda;
+    --primary-text-greyblue: #8291a0;
+    --primary-text-black: #c4c4c4;
+    --primary-text-grey: #acacac;
+    --primary-text-organe: #ca9754;
+    --primary-text-yellow: #d4bb6e;
+    --primary-text-green: #2bad75;
+    /* 系统中图标颜色 */
+    --primary-icon-grey: #757575;
+
+  }
+}
+
+/* 
+    深色主题配色 
+  */
+:root[theme="dark"] {
+  /* 系统中主题蓝色 */
+  --primary-theme-blue: #151F30;
+  --primary-theme-lightblue: #2C3544;
+  --primary-theme-white: #5B626E;
+  --primay-theme-grey: #efefef;
+  /* 系统中常用的tag的颜色 */
+  --primary-tag-green: #00b894;
+  --primary-tag-red: #d63031;
+  --primary-tag-yellow: #ffcc00;
+  --primary-tag-orange: #D77C28;
+  --primary-tag-purple: #6f42c1;
+  --primary-tag-pink: #e83e8c;
+
+  --primary-tag-lightorange: #FCF6EC;
+  --primary-tag-lightgreen: #ECF6F4;
+  /* 系统中背景颜色 */
+  --primary-bg-white: #fcfcfc;
+  --primary-bg-greywhite: #f1f1f1;
+  --primary-bg-tag-white:#5B626E;
+  --primary-grid-bg-white:#747d8c;
+  --grid-bg: #434B59ff;
+  --grid-stripe: #7278824f;
+  --primary-bg-scripteditor:#04101f;
+  /* 系统中文字颜色 */
+  --primary-text: #e0e0e0;
+  --primary-text-skyblue: #6183a5;
+  --primary-text-blue: #7eacda;
+  --primary-text-greyblue: #8291a0;
+  --primary-text-black: #c4c4c4;
+  --primary-text-grey: #acacac;
+  --primary-text-organe: #ca9754;
+  --primary-text-yellow: #d4bb6e;
+  --primary-text-green: #2bad75;
+  /* 系统中图标颜色 */
+  --primary-icon-grey: #757575;
+}

@@ -1,0 +1,7 @@
+// only scss variables
+
+@forward "element-plus/theme-chalk/src/dark/var.scss" with (
+  $colors: (  "primary": (
+    "base": #f8e058,
+  ))
+);

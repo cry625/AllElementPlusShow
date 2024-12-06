@@ -71,6 +71,10 @@
       <el-tag type="warning">Tag 4</el-tag>
       <el-tag type="danger">Tag 5</el-tag>
     </div>
+    <div>
+      <h3>这是一段测试文字</h3>
+      测试一下到底能不能正常显示
+    </div>
   </div>
 </template>
 

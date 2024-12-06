@@ -4,17 +4,13 @@ import piniaPersist from 'pinia-plugin-persist'
 import ElementPlus from 'element-plus'
 
 import 'element-plus/dist/index.css'
-import '@/assets/base.css' 
-import '@/assets/theme.css' 
-import 'element-plus/theme-chalk/dark/css-vars.css'
-import './styles/dark/css-vars.css'
-import './styles/element/index.scss'
-
-
 import App from './App.vue'
 import router from './router'
 import * as ElementPlusIconsVue from '@element-plus/icons-vue'
-// import '@/styles/systemColor/light.scss'
+
+import '@/assets/base.css' 
+import '@/assets/theme.css' 
+import '@/styles/index.scss'
 
 const app = createApp(App)
 for (const [key, component] of Object.entries(ElementPlusIconsVue)) {

@@ -12,4 +12,15 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     },
   },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `
+        @use "@/assets/theme.css" as *;
+        @use "@/assets/base.css" as *;
+        @use "@/assets/main.css" as *;
+      `,
+      }
+    }
+  }
 })

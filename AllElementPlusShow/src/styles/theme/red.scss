@@ -4,6 +4,7 @@
 @use 'element-plus/theme-chalk/src/mixins/mixins.scss' as *;
 @use 'sass:map';
 @use 'sass:math';
+@use 'sass:color';
 
 $colors: () !default;
 @each $type in common.$types {
@@ -51,7 +52,7 @@ $colors: map.merge($colors, (
     (
       $type: (
         '#{$mode}-#{$number}':
-          mix(
+          color.mix(
             $mix-color,
             map.get($colors, $type, 'base'),
             math.percentage(math.div($number, 10))

@@ -97,7 +97,14 @@
   /* 系统中图标颜色 */
   --primary-icon-grey: #757575;
 }
-
+:root[theme="red"] {
+  --el-color-primary: rgb(207, 60, 20);
+  --el-color-success:rgb(207, 60, 20);
+}
+:root[theme="blue"] {
+  --el-color-primary: rgb(20, 82, 207);
+  --el-color-success:rgb(20, 82, 207);
+}
 /* 
   深色主题配色 
 */
@@ -144,6 +151,9 @@
 /* 
     深色主题配色 
   */
+  .dark{
+    background-color:#002451 !important;
+  }
 :root[theme="dark"] {
   /* 系统中主题蓝色 */
   --primary-theme-blue: #151F30;

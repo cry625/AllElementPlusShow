@@ -4,7 +4,7 @@ import { defineStore } from 'pinia'
 export const useSysStore = defineStore('sys', {  
   state: () => {  
     return{
-        theme: '',  
+        theme: 'blue',  
     }
   },  
   getters: {  

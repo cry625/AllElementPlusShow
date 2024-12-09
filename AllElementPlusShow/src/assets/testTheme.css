@@ -1,0 +1,39 @@
+.day {
+  background: #eee;
+  color: black;
+}
+.night {
+  background: #333;
+  color: white;
+}
+
+@media (prefers-color-scheme: light) {
+  .day.light-scheme {
+    background: pink;
+    color: #555;
+  }
+  .night.light-scheme {
+    background: skyblue;
+    color: black;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .day.dark-scheme {
+    background: red;
+    color: white;
+  }
+  .night.dark-scheme {
+    background: green;
+    color: #ddd;
+  }
+}
+
+.day,
+.night {
+  display: inline-block;
+  padding: 1em;
+  width: 7em;
+  height: 2em;
+  vertical-align: middle;
+}

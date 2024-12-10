@@ -28,11 +28,12 @@
 
     --color-border: var(--vt-c-divider-light-2);
     /* --color-border-hover: var(--vt-c-divider-light-1); */
-
     --color-heading: var(--vt-c-text-light-1);
     --color-text: var(--vt-c-text-light-1);
 
     --section-gap: 160px;
+
+    --el-fill-color-blank:var(--vt-c-white);
   }
 
   :root[theme="grey"] {
@@ -59,9 +60,12 @@
 
     --color-border: var(--vt-c-divider-dark-2);
     /* --color-border-hover: var(--vt-c-divider-dark-1); */
-
     --color-heading: var(--vt-c-text-dark-1);
     --color-text: var(--vt-c-text-dark-2);
+
+    --el-fill-color-blank:var(--vt-c-black);
+    --el-bg-color-overlay:var(--vt-c-black);
+    --el-text-color-regular: var(--vt-c-text-dark-2);
   }
 
   :root[theme="grey"] {
@@ -71,8 +75,6 @@
     --el-color-warning: rgb(234, 134, 50);
     --el-color-danger: rgb(214, 39, 39);
     --el-color-error: rgb(214, 39, 39);
-
-    --el-bg-color:rgb(49, 196, 135);
   }
 
   :root[theme="red"] {

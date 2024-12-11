@@ -70,12 +70,36 @@
 
   :root[theme="grey"] {
     --el-color-primary: rgb(104, 100, 99);
+    --el-color-primary-light-1: rgb(130, 126, 125); /* 10% lighter */
+    --el-color-primary-light-2: rgb(156, 152, 151); /* 20% lighter */
+    --el-color-primary-light-3: rgb(182, 178, 177); /* 30% lighter */
+
     --el-color-success: rgb(71, 67, 67);
+    --el-color-success-light-1: rgb(87, 83, 83); /* 10% lighter */
+    --el-color-success-light-2: rgb(103, 99, 99); /* 20% lighter */
+    --el-color-success-light-3: rgb(119, 115, 115); /* 30% lighter */
+
     --el-color-info: rgb(90, 144, 234);
+    --el-color-info-light-1: rgb(110, 164, 244); /* 10% lighter */
+    --el-color-info-light-2: rgb(130, 184, 254); /* 20% lighter */
+    --el-color-info-light-3: rgb(150, 204, 264); /* 30% lighter */
+
     --el-color-warning: rgb(234, 134, 50);
+    --el-color-warning-light-1: rgb(244, 154, 70); /* 10% lighter */
+    --el-color-warning-light-2: rgb(254, 174, 90); /* 20% lighter */
+    --el-color-warning-light-3: rgb(264, 194, 110); /* 30% lighter */
+
     --el-color-danger: rgb(214, 39, 39);
+    --el-color-danger-light-1: rgb(224, 59, 59); /* 10% lighter */
+    --el-color-danger-light-2: rgb(234, 79, 79); /* 20% lighter */
+    --el-color-danger-light-3: rgb(244, 99, 99); /* 30% lighter */
+
     --el-color-error: rgb(214, 39, 39);
-  }
+    --el-color-error-light-1: rgb(224, 59, 59); /* 10% lighter */
+    --el-color-error-light-2: rgb(234, 79, 79); /* 20% lighter */
+    --el-color-error-light-3: rgb(244, 99, 99); /* 30% lighter */
+}
+
 
   :root[theme="red"] {
     --el-color-primary: rgb(221, 153, 134);

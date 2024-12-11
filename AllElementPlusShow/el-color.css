@@ -1,0 +1,170 @@
+:root {
+  /* 基础颜色 */
+  --el-color-white: #ffffff; /* 白色 */
+  --el-color-black: #000000; /* 黑色 */
+
+  /* 主要颜色及其 RGB 值 */
+  --el-color-primary-rgb: 64, 158, 255; /* 主要颜色的 RGB 值 */
+  --el-color-success-rgb: 103, 194, 58; /* 成功颜色的 RGB 值 */
+  --el-color-warning-rgb: 230, 162, 60; /* 警告颜色的 RGB 值 */
+  --el-color-danger-rgb: 245, 108, 108; /* 危险颜色的 RGB 值 */
+  --el-color-error-rgb: 245, 108, 108; /* 错误颜色的 RGB 值 */
+  --el-color-info-rgb: 144, 147, 153; /* 信息颜色的 RGB 值 */
+
+  /* 字体大小设置 */
+  --el-font-size-extra-large: 20px; /* 特大字体 */
+  --el-font-size-large: 18px; /* 大字体 */
+  --el-font-size-medium: 16px; /* 中字体 */
+  --el-font-size-base: 14px; /* 基础字体 */
+  --el-font-size-small: 13px; /* 小字体 */
+  --el-font-size-extra-small: 12px; /* 特小字体 */
+  
+  /* 字体样式 */
+  --el-font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif; /* 字体系列 */
+  --el-font-weight-primary: 500; /* 字体粗细 */
+  --el-font-line-height-primary: 24px; /* 行高 */
+
+  /* z-index 层级 */
+  --el-index-normal: 1; /* 普通层级 */
+  --el-index-top: 1000; /* 顶层级 */
+  --el-index-popper: 2000; /* 弹出层级 */
+
+  /* 边框半径 */
+  --el-border-radius-base: 4px; /* 基础边框圆角 */
+  --el-border-radius-small: 2px; /* 小边框圆角 */
+  --el-border-radius-round: 20px; /* 圆形边框圆角 */
+  --el-border-radius-circle: 100%; /* 圆形边框 */
+
+  /* 动画过渡 */
+  --el-transition-duration: 0.3s; /* 默认过渡时间 */
+  --el-transition-duration-fast: 0.2s; /* 快速过渡时间 */
+  --el-transition-function-ease-in-out-bezier: cubic-bezier(0.645, 0.045, 0.355, 1); /* 默认过渡函数 */
+  --el-transition-function-fast-bezier: cubic-bezier(0.23, 1, 0.32, 1); /* 快速过渡函数 */
+  --el-transition-all: all var(--el-transition-duration) var(--el-transition-function-ease-in-out-bezier); /* 所有属性的过渡 */
+  --el-transition-fade: opacity var(--el-transition-duration) var(--el-transition-function-fast-bezier); /* 渐变过渡 */
+  --el-transition-md-fade: transform var(--el-transition-duration) var(--el-transition-function-fast-bezier), opacity var(--el-transition-duration) var(--el-transition-function-fast-bezier); /* 中等渐变过渡 */
+  --el-transition-fade-linear: opacity var(--el-transition-duration-fast) linear; /* 线性渐变过渡 */
+  --el-transition-border: border-color var(--el-transition-duration-fast) var(--el-transition-function-ease-in-out-bezier); /* 边框颜色过渡 */
+  --el-transition-box-shadow: box-shadow var(--el-transition-duration-fast) var(--el-transition-function-ease-in-out-bezier); /* 阴影过渡 */
+  --el-transition-color: color var(--el-transition-duration-fast) var(--el-transition-function-ease-in-out-bezier); /* 颜色过渡 */
+
+  /* 组件尺寸 */
+  --el-component-size-large: 40px; /* 大组件尺寸 */
+  --el-component-size: 32px; /* 默认组件尺寸 */
+  --el-component-size-small: 24px; /* 小组件尺寸 */
+
+  /* 颜色方案设置 */
+  color-scheme: light; /* 颜色方案为浅色模式 */
+  
+  /* 主要颜色及其变体 */
+  --el-color-primary: #409eff; /* 主要颜色 */
+  --el-color-primary-light-3: rgb(121.3, 187.1, 255); /* 主要颜色的较浅变体 */
+  --el-color-primary-light-5: rgb(159.5, 206.5, 255); /* 主要颜色的更浅变体 */
+  --el-color-primary-light-7: rgb(197.7, 225.9, 255); /* 主要颜色的更浅变体 */
+  --el-color-primary-light-8: rgb(216.8, 235.6, 255); /* 主要颜色的更浅变体 */
+  --el-color-primary-light-9: rgb(235.9, 245.3, 255); /* 主要颜色的更浅变体 */
+  --el-color-primary-dark-2: rgb(51.2, 126.4, 204); /* 主要颜色的较深变体 */
+  
+  /* 成功颜色及其变体 */
+  --el-color-success: #67c23a; /* 成功颜色 */
+  --el-color-success-light-3: rgb(148.6, 212.3, 117.1); /* 成功颜色的较浅变体 */
+  --el-color-success-light-5: rgb(179, 224.5, 156.5); /* 成功颜色的更浅变体 */
+  --el-color-success-light-7: rgb(209.4, 236.7, 195.9); /* 成功颜色的更浅变体 */
+  --el-color-success-light-8: rgb(224.6, 242.8, 215.6); /* 成功颜色的更浅变体 */
+  --el-color-success-light-9: rgb(239.8, 248.9, 235.3); /* 成功颜色的更浅变体 */
+  --el-color-success-dark-2: rgb(82.4, 155.2, 46.4); /* 成功颜色的较深变体 */
+
+  /* 警告颜色及其变体 */
+  --el-color-warning: #e6a23c; /* 警告颜色 */
+  --el-color-warning-light-3: rgb(237.5, 189.9, 118.5); /* 警告颜色的较浅变体 */
+  --el-color-warning-light-5: rgb(242.5, 208.5, 157.5); /* 警告颜色的更浅变体 */
+  --el-color-warning-light-7: rgb(247.5, 227.1, 196.5); /* 警告颜色的更浅变体 */
+  --el-color-warning-light-8: rgb(250, 236.4, 216); /* 警告颜色的更浅变体 */
+  --el-color-warning-light-9: rgb(252.5, 245.7, 235.5); /* 警告颜色的更浅变体 */
+  --el-color-warning-dark-2: rgb(184, 129.6, 48); /* 警告颜色的较深变体 */
+
+  /* 危险颜色及其变体 */
+  --el-color-danger: #f56c6c; /* 危险颜色 */
+  --el-color-danger-light-3: rgb(248, 152.1, 152.1); /* 危险颜色的较浅变体 */
+  --el-color-danger-light-5: rgb(250, 181.5, 181.5); /* 危险颜色的更浅变体 */
+  --el-color-danger-light-7: rgb(252, 210.9, 210.9); /* 危险颜色的更浅变体 */
+  --el-color-danger-light-8: rgb(253, 225.6, 225.6); /* 危险颜色的更浅变体 */
+  --el-color-danger-light-9: rgb(254, 240.3, 240.3); /* 危险颜色的更浅变体 */
+  --el-color-danger-dark-2: rgb(196, 86.4, 86.4); /* 危险颜色的较深变体 */
+  
+  /* 错误颜色及其变体 */
+  --el-color-error: #f56c6c; /* 错误颜色 */
+  --el-color-error-light-3: rgb(248, 152.1, 152.1); /* 错误颜色的较浅变体 */
+  --el-color-error-light-5: rgb(250, 181.5, 181.5); /* 错误颜色的更浅变体 */
+  --el-color-error-light-7: rgb(252, 210.9, 210.9); /* 错误颜色的更浅变体 */
+  --el-color-error-light-8: rgb(253, 225.6, 225.6); /* 错误颜色的更浅变体 */
+  --el-color-error-light-9: rgb(254, 240.3, 240.3); /* 错误颜色的更浅变体 */
+  --el-color-error-dark-2: rgb(196, 86.4, 86.4); /* 错误颜色的较深变体 */
+  
+  /* 信息颜色及其变体 */
+  --el-color-info: #909399; /* 信息颜色 */
+  --el-color-info-light-3: rgb(177.3, 179.4, 183.6); /* 信息颜色的较浅变体 */
+  --el-color-info-light-5: rgb(199.5, 201, 204); /* 信息颜色的更浅变体 */
+  --el-color-info-light-7: rgb(221.7, 222.6, 224.4); /* 信息颜色的更浅变体 */
+  --el-color-info-light-8: rgb(232.8, 233.4, 234.6); /* 信息颜色的更浅变体 */
+  --el-color-info-light-9: rgb(243.9, 244.2, 244.8); /* 信息颜色的更浅变体 */
+  --el-color-info-dark-2: rgb(115.2, 117.6, 122.4); /* 信息颜色的较深变体 */
+
+  /* 背景颜色 */
+  --el-bg-color: #ffffff; /* 默认背景颜色 */
+  --el-bg-color-page: #f2f3f5; /* 页面背景颜色 */
+  --el-bg-color-overlay: #ffffff; /* 覆盖层背景颜色 */
+
+  /* 文本颜色 */
+  --el-text-color-primary: #303133; /* 主要文本颜色 */
+  --el-text-color-regular: #606266; /* 常规文本颜色 */
+  --el-text-color-secondary: #909399; /* 次要文本颜色 */
+  --el-text-color-placeholder: #a8abb2; /* 占位符文本颜色 */
+  --el-text-color-disabled: #c0c4cc; /* 禁用状态文本颜色 */
+
+  /* 边框颜色 */
+  --el-border-color: #dcdfe6; /* 默认边框颜色 */
+  --el-border-color-light: #e4e7ed; /* 浅边框颜色 */
+  --el-border-color-lighter: #ebeef5; /* 更浅边框颜色 */
+  --el-border-color-extra-light: #f2f6fc; /* 超浅边框颜色 */
+  --el-border-color-dark: #d4d7de; /* 深边框颜色 */
+  --el-border-color-darker: #cdd0d6; /* 更深边框颜色 */
+
+  /* 填充颜色 */
+  --el-fill-color: #f0f2f5; /* 填充颜色 */
+  --el-fill-color-light: #f5f7fa; /* 浅填充颜色 */
+  --el-fill-color-lighter: #fafafa; /* 更浅填充颜色 */
+  --el-fill-color-extra-light: #fafcff; /* 超浅填充颜色 */
+  --el-fill-color-dark: #ebedf0; /* 深填充颜色 */
+  --el-fill-color-darker: #e6e8eb; /* 更深填充颜色 */
+  --el-fill-color-blank: #ffffff; /* 空白填充颜色 */
+
+  /* 盒子阴影 */
+  --el-box-shadow: 0px 12px 32px 4px rgba(0, 0, 0, 0.04), 0px 8px 20px rgba(0, 0, 0, 0.08); /* 默认阴影 */
+  --el-box-shadow-light: 0px 0px 12px rgba(0, 0, 0, 0.12); /* 浅阴影 */
+  --el-box-shadow-lighter: 0px 0px 6px rgba(0, 0, 0, 0.12); /* 更浅阴影 */
+  --el-box-shadow-dark: 0px 16px 48px 16px rgba(0, 0, 0, 0.08), 0px 12px 32px rgba(0, 0, 0, 0.12), 0px 8px 16px -8px rgba(0, 0, 0, 0.16); /* 深阴影 */
+
+  /* 禁用状态样式 */
+  --el-disabled-bg-color: var(--el-fill-color-light); /* 禁用状态背景颜色 */
+  --el-disabled-text-color: var(--el-text-color-placeholder); /* 禁用状态文本颜色 */
+  --el-disabled-border-color: var(--el-border-color-light); /* 禁用状态边框颜色 */
+
+  /* 覆盖层颜色 */
+  --el-overlay-color: rgba(0, 0, 0, 0.8); /* 覆盖层颜色 */
+  --el-overlay-color-light: rgba(0, 0, 0, 0.7); /* 浅覆盖层颜色 */
+  --el-overlay-color-lighter: rgba(0, 0, 0, 0.5); /* 更浅覆盖层颜色 */
+
+  /* 蒙版颜色 */
+  --el-mask-color: rgba(255, 255, 255, 0.9); /* 蒙版颜色 */
+  --el-mask-color-extra-light: rgba(255, 255, 255, 0.3); /* 超浅蒙版颜色 */
+
+  /* 边框样式 */
+  --el-border-width: 1px; /* 边框宽度 */
+  --el-border-style: solid; /* 边框样式 */
+  --el-border-color-hover: var(--el-text-color-disabled); /* 悬停状态边框颜色 */
+  --el-border: var(--el-border-width) var(--el-border-style) var(--el-border-color); /* 边框属性组合 */
+  
+  /* 单色灰色 SVG 颜色 */
+  --el-svg-monochrome-grey: var(--el-border-color); /* 单色灰色 SVG 颜色 */
+}

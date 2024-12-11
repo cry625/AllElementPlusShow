@@ -16,7 +16,8 @@ export default defineConfig({
     preprocessorOptions: {
       scss: {
         additionalData: `
-        @use "@/assets/theme.css" as *;
+        @use "@/assets/lightTheme.css" as *;
+        @use "@/assets/darkTheme.css" as *;
         @use "@/assets/base.css" as *;
         @use "@/assets/main.css" as *;
       `,

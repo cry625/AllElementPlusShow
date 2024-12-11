@@ -1,0 +1,220 @@
+/* 系统主题配色 */
+/* 
+  配置规则：
+    1. 各主题配色变量名必须保持一致
+    2. 变量命名规则：
+      1) --primary: 主配色，通常用于多个页面；
+      2) --页面名：该页面适用配色；
+      3) --页面名-bg：页面背景图；
+      4) --页面名-ic：页面图标。
+*/
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-background: var(--vt-c-white);
+    --color-background-soft: var(--vt-c-white-soft);
+    --color-background-mute: var(--vt-c-white-mute);
+
+    --color-border: var(--vt-c-divider-light-2);
+    /* --color-border-hover: var(--vt-c-divider-light-1); */
+    --color-heading: var(--vt-c-text-light-1);
+    --color-text: var(--vt-c-text-light-1);
+
+    --section-gap: 160px;
+
+    --el-fill-color-blank:var(--vt-c-white);
+  }
+  :root {
+    --categories-c-bg: #F9FAFC; /* 背景颜色，通常用于分类的背景 */
+    --categories-c-page: #E5E9F2; /* 页面背景颜色，可能用于分类页面的整体背景 */
+    --categories-c-overlay: white; /* 覆盖层颜色，通常用于模态框或弹出层的背景 */
+    --categories-c-text: #99A9BF; /* 文本颜色，用于分类中的文字内容 */
+    --categories-c-icon: #E5E9F2; /* 图标颜色，可能用于分类图标的填充色 */
+    --categories-c-line: #E5E9F2; /* 线条颜色，可能用于分隔线或边框的颜色 */
+    
+    --ep-c-bg-row: #f9fafc; /* 行背景颜色 */
+    --ep-c-bg-purple: #d3dce6; /* 紫色背景颜色 */
+    --ep-c-bg-purple-dark: #99a9bf; /* 深紫色背景颜色 */
+    --ep-c-bg-purple-light: #e5e9f2; /* 浅紫色背景颜色 */
+
+    --vp-c-text-1: rgba(60, 60, 67);
+    --vp-c-text-2: rgba(60, 60, 67, .78);
+    --vp-c-text-3: rgba(60, 60, 67, .56);
+
+    --vp-c-border: #c2c2c4;
+    --vp-c-divider: #e2e2e3;
+    --vp-c-gutter: #e2e2e3;
+
+    --vp-c-bg: #ffffff;
+    --vp-c-bg-alt: #f6f6f7;
+    --vp-c-bg-elv: #ffffff;
+    --vp-c-bg-soft: #f6f6f7;
+
+    --vp-c-gray-1: #dddde3;
+    --vp-c-gray-2: #e4e4e9;
+    --vp-c-gray-3: #ebebef;
+    --vp-c-gray-soft: rgba(142, 150, 170, .14);
+    --vp-c-indigo-1: #3451b2;
+    --vp-c-indigo-2: #3a5ccc;
+    --vp-c-indigo-3: #5672cd;
+    --vp-c-indigo-soft: rgba(100, 108, 255, .14);
+    --vp-c-purple-1: #6f42c1;
+    --vp-c-purple-2: #7e4cc9;
+    --vp-c-purple-3: #8e5cd9;
+    --vp-c-purple-soft: rgba(159, 122, 234, .14);
+    --vp-c-green-1: #18794e;
+    --vp-c-green-2: #299764;
+    --vp-c-green-3: #30a46c;
+    --vp-c-green-soft: rgba(16, 185, 129, .14);
+    --vp-c-yellow-1: #915930;
+    --vp-c-yellow-2: #946300;
+    --vp-c-yellow-3: #9f6a00;
+    --vp-c-yellow-soft: rgba(234, 179, 8, .14);
+    --vp-c-red-1: #b8272c;
+    --vp-c-red-2: #d5393e;
+    --vp-c-red-3: #e0575b;
+    --vp-c-red-soft: rgba(244, 63, 94, .14);
+    --vp-c-sponsor: #db2777;
+
+    /* 基础颜色 */
+    --el-color-white: #ffffff; /* 白色 */
+    --el-color-black: #000000; /* 黑色 */
+    --vp-c-neutral: var(--vp-c-black);
+    --vp-c-neutral-inverse: var(--vp-c-white);
+
+    --bg-color-rgb:255, 255, 255;
+    --bg-color-soft: #fafafa;
+    --bg-color-mute: #f2f2f2;
+    --code-tooltip-bg-color: var(--code-bg-color);
+    --code-tooltip-color: #0c61c9;
+    --purple-color: #6222c2;
+    --purple-color-light: #9065db;
+  }
+  :root{
+    /* 颜色方案设置 */
+    color-scheme: light; /* 颜色方案为浅色模式 */
+  
+    /* 背景颜色 */
+    --el-bg-color: #ffffff; /* 默认背景颜色 */
+    --el-bg-color-page: #f2f3f5; /* 页面背景颜色 */
+    --el-bg-color-overlay: #ffffff; /* 覆盖层背景颜色 */
+  
+    /* 文本颜色 */
+    --el-text-color-primary: #303133; /* 主要文本颜色 */
+    --el-text-color-regular: #606266; /* 常规文本颜色 */
+    --el-text-color-secondary: #909399; /* 次要文本颜色 */
+    --el-text-color-placeholder: #a8abb2; /* 占位符文本颜色 */
+    --el-text-color-disabled: #c0c4cc; /* 禁用状态文本颜色 */
+  
+    /* 边框颜色 */
+    --el-border-color: #dcdfe6; /* 默认边框颜色 */
+    --el-border-color-light: #e4e7ed; /* 浅边框颜色 */
+    --el-border-color-lighter: #ebeef5; /* 更浅边框颜色 */
+    --el-border-color-extra-light: #f2f6fc; /* 超浅边框颜色 */
+    --el-border-color-dark: #d4d7de; /* 深边框颜色 */
+    --el-border-color-darker: #cdd0d6; /* 更深边框颜色 */
+  
+    /* 填充颜色 */
+    --el-fill-color: #f0f2f5; /* 填充颜色 */
+    --el-fill-color-light: #f5f7fa; /* 浅填充颜色 */
+    --el-fill-color-lighter: #fafafa; /* 更浅填充颜色 */
+    --el-fill-color-extra-light: #fafcff; /* 超浅填充颜色 */
+    --el-fill-color-dark: #ebedf0; /* 深填充颜色 */
+    --el-fill-color-darker: #e6e8eb; /* 更深填充颜色 */
+    --el-fill-color-blank: #ffffff; /* 空白填充颜色 */
+  
+    /* 盒子阴影 */
+    --el-box-shadow: 0px 12px 32px 4px rgba(0, 0, 0, 0.04), 0px 8px 20px rgba(0, 0, 0, 0.08); /* 默认阴影 */
+    --el-box-shadow-light: 0px 0px 12px rgba(0, 0, 0, 0.12); /* 浅阴影 */
+    --el-box-shadow-lighter: 0px 0px 6px rgba(0, 0, 0, 0.12); /* 更浅阴影 */
+    --el-box-shadow-dark: 0px 16px 48px 16px rgba(0, 0, 0, 0.08), 0px 12px 32px rgba(0, 0, 0, 0.12), 0px 8px 16px -8px rgba(0, 0, 0, 0.16); /* 深阴影 */
+  
+    /* 禁用状态样式 */
+    --el-disabled-bg-color: var(--el-fill-color-light); /* 禁用状态背景颜色 */
+    --el-disabled-text-color: var(--el-text-color-placeholder); /* 禁用状态文本颜色 */
+    --el-disabled-border-color: var(--el-border-color-light); /* 禁用状态边框颜色 */
+  
+    /* 覆盖层颜色 */
+    --el-overlay-color: rgba(0, 0, 0, 0.8); /* 覆盖层颜色 */
+    --el-overlay-color-light: rgba(0, 0, 0, 0.7); /* 浅覆盖层颜色 */
+    --el-overlay-color-lighter: rgba(0, 0, 0, 0.5); /* 更浅覆盖层颜色 */
+  
+    /* 蒙版颜色 */
+    --el-mask-color: rgba(255, 255, 255, 0.9); /* 蒙版颜色 */
+    --el-mask-color-extra-light: rgba(255, 255, 255, 0.3); /* 超浅蒙版颜色 */
+  
+    /* 边框样式 */
+    --el-border-width: 1px; /* 边框宽度 */
+    --el-border-style: solid; /* 边框样式 */
+    --el-border-color-hover: var(--el-text-color-disabled); /* 悬停状态边框颜色 */
+    --el-border: var(--el-border-width) var(--el-border-style) var(--el-border-color); /* 边框属性组合 */
+    
+    /* 单色灰色 SVG 颜色 */
+    --el-svg-monochrome-grey: var(--el-border-color); /* 单色灰色 SVG 颜色 */
+   }
+  :root[theme="grey"] {
+    --el-color-primary: rgb(71, 67, 67);
+    --el-color-success: rgb(104, 100, 99);
+  }
+
+  :root[theme="red"] {
+    --el-color-primary: rgb(207, 60, 20);
+    --el-color-success: rgb(221, 153, 134);
+  }
+
+  :root[theme="blue"]{
+    /* 主要颜色及其变体 */
+  --el-color-primary: #409eff; /* 主要颜色 */
+  --el-color-primary-light-3: rgb(121.3, 187.1, 255); /* 主要颜色的较浅变体 */
+  --el-color-primary-light-5: rgb(159.5, 206.5, 255); /* 主要颜色的更浅变体 */
+  --el-color-primary-light-7: rgb(197.7, 225.9, 255); /* 主要颜色的更浅变体 */
+  --el-color-primary-light-8: rgb(216.8, 235.6, 255); /* 主要颜色的更浅变体 */
+  --el-color-primary-light-9: rgb(235.9, 245.3, 255); /* 主要颜色的更浅变体 */
+  --el-color-primary-dark-2: rgb(51.2, 126.4, 204); /* 主要颜色的较深变体 */
+  
+  /* 成功颜色及其变体 */
+  --el-color-success: #67c23a; /* 成功颜色 */
+  --el-color-success-light-3: rgb(148.6, 212.3, 117.1); /* 成功颜色的较浅变体 */
+  --el-color-success-light-5: rgb(179, 224.5, 156.5); /* 成功颜色的更浅变体 */
+  --el-color-success-light-7: rgb(209.4, 236.7, 195.9); /* 成功颜色的更浅变体 */
+  --el-color-success-light-8: rgb(224.6, 242.8, 215.6); /* 成功颜色的更浅变体 */
+  --el-color-success-light-9: rgb(239.8, 248.9, 235.3); /* 成功颜色的更浅变体 */
+  --el-color-success-dark-2: rgb(82.4, 155.2, 46.4); /* 成功颜色的较深变体 */
+  
+  /* 警告颜色及其变体 */
+  --el-color-warning: #e6a23c; /* 警告颜色 */
+  --el-color-warning-light-3: rgb(237.5, 189.9, 118.5); /* 警告颜色的较浅变体 */
+  --el-color-warning-light-5: rgb(242.5, 208.5, 157.5); /* 警告颜色的更浅变体 */
+  --el-color-warning-light-7: rgb(247.5, 227.1, 196.5); /* 警告颜色的更浅变体 */
+  --el-color-warning-light-8: rgb(250, 236.4, 216); /* 警告颜色的更浅变体 */
+  --el-color-warning-light-9: rgb(252.5, 245.7, 235.5); /* 警告颜色的更浅变体 */
+  --el-color-warning-dark-2: rgb(184, 129.6, 48); /* 警告颜色的较深变体 */
+  
+  /* 危险颜色及其变体 */
+  --el-color-danger: #f56c6c; /* 危险颜色 */
+  --el-color-danger-light-3: rgb(248, 152.1, 152.1); /* 危险颜色的较浅变体 */
+  --el-color-danger-light-5: rgb(250, 181.5, 181.5); /* 危险颜色的更浅变体 */
+  --el-color-danger-light-7: rgb(252, 210.9, 210.9); /* 危险颜色的更浅变体 */
+  --el-color-danger-light-8: rgb(253, 225.6, 225.6); /* 危险颜色的更浅变体 */
+  --el-color-danger-light-9: rgb(254, 240.3, 240.3); /* 危险颜色的更浅变体 */
+  --el-color-danger-dark-2: rgb(196, 86.4, 86.4); /* 危险颜色的较深变体 */
+  
+  /* 错误颜色及其变体 */
+  --el-color-error: #f56c6c; /* 错误颜色 */
+  --el-color-error-light-3: rgb(248, 152.1, 152.1); /* 错误颜色的较浅变体 */
+  --el-color-error-light-5: rgb(250, 181.5, 181.5); /* 错误颜色的更浅变体 */
+  --el-color-error-light-7: rgb(252, 210.9, 210.9); /* 错误颜色的更浅变体 */
+  --el-color-error-light-8: rgb(253, 225.6, 225.6); /* 错误颜色的更浅变体 */
+  --el-color-error-light-9: rgb(254, 240.3, 240.3); /* 错误颜色的更浅变体 */
+  --el-color-error-dark-2: rgb(196, 86.4, 86.4); /* 错误颜色的较深变体 */
+  
+  /* 信息颜色及其变体 */
+  --el-color-info: #909399; /* 信息颜色 */
+  --el-color-info-light-3: rgb(177.3, 179.4, 183.6); /* 信息颜色的较浅变体 */
+  --el-color-info-light-5: rgb(199.5, 201, 204); /* 信息颜色的更浅变体 */
+  --el-color-info-light-7: rgb(221.7, 222.6, 224.4); /* 信息颜色的更浅变体 */
+  --el-color-info-light-8: rgb(232.8, 233.4, 234.6); /* 信息颜色的更浅变体 */
+  --el-color-info-light-9: rgb(243.9, 244.2, 244.8); /* 信息颜色的更浅变体 */
+  --el-color-info-dark-2: rgb(115.2, 117.6, 122.4); /* 信息颜色的较深变体 */
+   }
+
+  }

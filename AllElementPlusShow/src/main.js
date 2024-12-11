@@ -9,7 +9,8 @@ import router from './router'
 import * as ElementPlusIconsVue from '@element-plus/icons-vue'
 
 import '@/assets/base.css' 
-import '@/assets/theme.css' 
+import '@/assets/lightTheme.css' 
+import '@/assets/darkTheme.css' 
 
 const app = createApp(App)
 for (const [key, component] of Object.entries(ElementPlusIconsVue)) {

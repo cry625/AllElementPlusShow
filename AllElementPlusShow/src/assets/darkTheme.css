@@ -19,7 +19,6 @@
     --color-heading: var(--vt-c-text-dark-1);
     --color-text: var(--vt-c-text-dark-2);
 
-    --el-fill-color-blank:var(--vt-c-black);
     --el-bg-color-overlay:var(--vt-c-black);
     --el-text-color-regular: var(--vt-c-text-dark-2);
   }
@@ -93,33 +92,33 @@
     color-scheme: dark; /* 颜色方案为深色模式 */
   
     /* 背景颜色 */
-    --el-bg-color: #1e1e1e; /* 默认背景颜色 */
+    --el-bg-color: #141414; /* 默认背景颜色 */
     --el-bg-color-page: #2c2c2c; /* 页面背景颜色 */
     --el-bg-color-overlay: rgba(30, 30, 30, 0.9); /* 覆盖层背景颜色 */
   
     /* 文本颜色 */
     --el-text-color-primary: #ffffff; /* 主要文本颜色 */
-    --el-text-color-regular: #e0e0e0; /* 常规文本颜色 */
+    --el-text-color-regular: #CFD3DC; /* 常规文本颜色 */
     --el-text-color-secondary: #b0b0b0; /* 次要文本颜色 */
     --el-text-color-placeholder: #7f7f7f; /* 占位符文本颜色 */
     --el-text-color-disabled: #555555; /* 禁用状态文本颜色 */
   
     /* 边框颜色 */
-    --el-border-color: #444444; /* 默认边框颜色 */
-    --el-border-color-light: #555555; /* 浅边框颜色 */
-    --el-border-color-lighter: #666666; /* 更浅边框颜色 */
-    --el-border-color-extra-light: #777777; /* 超浅边框颜色 */
-    --el-border-color-dark: #333333; /* 深边框颜色 */
-    --el-border-color-darker: #222222; /* 更深边框颜色 */
+    --el-border-color: #4C4D4F; /* 默认边框颜色 */
+    --el-border-color-light: #414243; /* 浅边框颜色 */
+    --el-border-color-lighter: #363637; /* 更浅边框颜色 */
+    --el-border-color-extra-light: #2B2B2C; /* 超浅边框颜色 */
+    --el-border-color-dark: #58585B; /* 深边框颜色 */
+    --el-border-color-darker: #636466; /* 更深边框颜色 */
   
     /* 填充颜色 */
     --el-fill-color: #2b2b2b; /* 填充颜色 */
-    --el-fill-color-light: #3a3a3a; /* 浅填充颜色 */
-    --el-fill-color-lighter: #4a4a4a; /* 更浅填充颜色 */
+    --el-fill-color-light: #262727; /* 浅填充颜色 */
+    --el-fill-color-lighter: #1D1D1D; /* 更浅填充颜色 */
     --el-fill-color-extra-light: #5a5a5a; /* 超浅填充颜色 */
     --el-fill-color-dark: #1f1f1f; /* 深填充颜色 */
     --el-fill-color-darker: #0f0f0f; /* 更深填充颜色 */
-    --el-fill-color-blank: #1e1e1e; /* 空白填充颜色 */
+    --el-fill-color-blank: #transparent; /* 空白填充颜色 */
   
     /* 盒子阴影 */
     --el-box-shadow: 0px 12px 32px 4px rgba(0, 0, 0, 0.5), 0px 8px 20px rgba(0, 0, 0, 0.7); /* 默认阴影 */

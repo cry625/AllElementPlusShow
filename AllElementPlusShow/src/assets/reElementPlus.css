@@ -1,0 +1,7 @@
+/* 对于elementPlus样式全局修改 */
+.el-dropdown-link {
+  cursor: pointer;
+  color: var(--el-color-primary);
+  display: flex;
+  align-items: center;
+}

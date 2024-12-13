@@ -241,17 +241,144 @@
     </div>
     <el-divider></el-divider>
 
-<!-- 到 折叠面板 了 -->
-
-
+    <div>
+      <div style="margin: 10px;font-size: 24px;">collapse</div>
+      <el-collapse v-model="activeNames" @change="collapsehandleChange">
+      <el-collapse-item title="Consistency" name="1">
+        <div>
+          Consistent with real life: in line with the process and logic of real
+          life, and comply with languages and habits that the users are used to;
+        </div>
+        <div>
+          Consistent within interface: all elements should be consistent, such
+          as: design style, icons and texts, position of elements, etc.
+        </div>
+      </el-collapse-item>
+      <el-collapse-item title="Feedback" name="2">
+        <div>
+          Operation feedback: enable the users to clearly perceive their
+          operations by style updates and interactive effects;
+        </div>
+        <div>
+          Visual feedback: reflect current state by updating or rearranging
+          elements of the page.
+        </div>
+      </el-collapse-item>
+    </el-collapse>
+    </div>
+    <el-divider></el-divider>
 
 
     <div>
-      <div style="margin: 10px;font-size: 24px;">message</div>
-      <el-button :plain="true" @click="open2">Success</el-button>
-      <el-button :plain="true" @click="open3">Warning</el-button>
-      <el-button :plain="true" @click="open1">Message</el-button>
-      <el-button :plain="true" @click="open4">Error</el-button>
+      <div style="margin: 10px;font-size: 24px;">descriptions</div>
+      <el-descriptions
+    class="margin-top"
+    title="With border"
+    :column="3"
+    :size="size"
+    border
+  >
+    <template #extra>
+      <el-button type="primary">Operation</el-button>
+    </template>
+    <el-descriptions-item>
+      <template #label>
+        <div class="cell-item">
+          <el-icon :style="iconStyle">
+            <user />
+          </el-icon>
+          Username
+        </div>
+      </template>
+      kooriookami
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <div class="cell-item">
+          <el-icon :style="iconStyle">
+            <iphone />
+          </el-icon>
+          Telephone
+        </div>
+      </template>
+      18100000000
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <div class="cell-item">
+          <el-icon :style="iconStyle">
+            <location />
+          </el-icon>
+          Place
+        </div>
+      </template>
+      Suzhou
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <div class="cell-item">
+          <el-icon :style="iconStyle">
+            <tickets />
+          </el-icon>
+          Remarks
+        </div>
+      </template>
+      <el-tag size="small">School</el-tag>
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <div class="cell-item">
+          <el-icon :style="iconStyle">
+            <office-building />
+          </el-icon>
+          Address
+        </div>
+      </template>
+      No.1188, Wuzhong Avenue, Wuzhong District, Suzhou, Jiangsu Province
+    </el-descriptions-item>
+  </el-descriptions>
+    </div>
+    <el-divider></el-divider>
+
+    <div>
+      <div style="margin: 10px;font-size: 24px;">image </div>
+      <el-image style="width: 100px; height: 100px" :src="url" :fit="fit" />
+    </div>
+    <el-divider></el-divider>
+
+    <div>
+      <div style="margin: 10px;font-size: 24px;">pagination</div>
+      <el-pagination
+      v-model:current-page="currentPage1"
+      :page-size="100"
+      :size="size"
+      :disabled="disabled"
+      :background="background"
+      layout="total, prev, pager, next"
+      :total="1000"
+      @size-change="handleSizeChange"
+      @current-change="handleCurrentChange"
+    />
+    </div>
+    <el-divider></el-divider>
+
+    <div>
+      <div style="margin: 10px;font-size: 24px;">progress</div>
+        <el-progress :percentage="50" />
+        <el-progress :percentage="10" :format="format" />
+        <el-progress :percentage="34" status="success" />
+        <el-progress :percentage="70" status="warning" />
+        <el-progress :percentage="50" status="exception" />
+    </div>
+    <el-divider></el-divider>
+
+    <div>
+      <div style="margin: 10px;font-size: 24px;">table</div>
+      <el-table :data="tableData" stripe style="width: 100%">
+        <el-table-column prop="date" label="Date" width="180" />
+        <el-table-column prop="name" label="Name" width="180" />
+        <el-table-column prop="address" label="Address" />
+      </el-table>
     </div>
     <el-divider></el-divider>
 
@@ -265,18 +392,153 @@
     </div>
     <el-divider></el-divider>
 
+    <div>
+      <div style="margin: 10px;font-size: 24px;">timeline</div>
+      <el-timeline style="max-width: 600px">
+    <el-timeline-item
+      v-for="(activity, index) in activities"
+      :key="index"
+      :icon="activity.icon"
+      :type="activity.type"
+      :color="activity.color"
+      :size="activity.size"
+      :hollow="activity.hollow"
+      :timestamp="activity.timestamp"
+    >
+      {{ activity.content }}
+    </el-timeline-item>
+  </el-timeline>
+    </div>
+    <el-divider></el-divider>
+
+    <div>
+      <div style="margin: 10px;font-size: 24px;">descriptions</div>
+      <el-tree
+    style="max-width: 600px"
+    :data="data"
+    :props="defaultProps"
+    @node-click="handleNodeClick"
+  />
+    </div>
+    <el-divider></el-divider>
+
+    <div>
+      <div style="margin: 10px;font-size: 24px;">descriptions</div>
+      <el-segmented v-model="segmentedvalue" :options="segmentedoptions" size="large" />
+      <el-segmented v-model="segmentedvalue" :options="segmentedoptions" size="small" />
+    </div>
+    <el-divider></el-divider>
+
+    <div>
+      <div style="margin: 10px;font-size: 24px;">breadcrumb</div>
+      <el-breadcrumb separator="/">
+    <el-breadcrumb-item :to="{ path: '/' }">homepage</el-breadcrumb-item>
+    <el-breadcrumb-item>
+      <a href="/">promotion management</a>
+    </el-breadcrumb-item>
+    <el-breadcrumb-item>promotion list</el-breadcrumb-item>
+    <el-breadcrumb-item>promotion detail</el-breadcrumb-item>
+  </el-breadcrumb>
+    </div>
+    <el-divider></el-divider>
+
+    <!-- 异常 -->
+    <div>
+      <div style="margin: 10px;font-size: 24px;">dropdown</div>
+      <el-dropdown>
+    <span class="el-dropdown-link">
+      Dropdown List
+      <el-icon class="el-icon--right">
+        <arrow-down />
+      </el-icon>
+    </span>
+    <template #dropdown>
+      <el-dropdown-menu>
+        <el-dropdown-item>Action 1</el-dropdown-item>
+        <el-dropdown-item>Action 2</el-dropdown-item>
+        <el-dropdown-item>Action 3</el-dropdown-item>
+        <el-dropdown-item disabled>Action 4</el-dropdown-item>
+        <el-dropdown-item divided>Action 5</el-dropdown-item>
+      </el-dropdown-menu>
+    </template>
+  </el-dropdown>
+    </div>
+    <el-divider></el-divider>
+
+    <!-- 异常 -->
+    <div>
+      <div style="margin: 10px;font-size: 24px;">empty</div>
+      <el-empty></el-empty>
+    </div>
+    <el-divider></el-divider>
+
+    <div>
+      <div style="margin: 10px;font-size: 24px;">menu</div>
+      <el-menu
+    :default-active="activeIndex"
+    class="el-menu-demo"
+    mode="horizontal"
+    @select="handleSelect"
+  >
+    <el-menu-item index="1">Processing Center</el-menu-item>
+    <el-sub-menu index="2">
+      <template #title>Workspace</template>
+      <el-menu-item index="2-1">item one</el-menu-item>
+      <el-menu-item index="2-2">item two</el-menu-item>
+      <el-menu-item index="2-3">item three</el-menu-item>
+      <el-sub-menu index="2-4">
+        <template #title>item four</template>
+        <el-menu-item index="2-4-1">item one</el-menu-item>
+        <el-menu-item index="2-4-2">item two</el-menu-item>
+        <el-menu-item index="2-4-3">item three</el-menu-item>
+      </el-sub-menu>
+    </el-sub-menu>
+    <el-menu-item index="3" disabled>Info</el-menu-item>
+    <el-menu-item index="4">Orders</el-menu-item>
+  </el-menu>
+    </div>
+    <el-divider></el-divider>
+
+
+
+
+
+
+
+
+
+    <!-- 到page header -->
+
+    <div>
+      <div style="margin: 10px;font-size: 24px;">descriptions</div>
+    </div>
+    <el-divider></el-divider>
+
+    <div>
+      <div style="margin: 10px;font-size: 24px;">message</div>
+      <el-button :plain="true" @click="open2">Success</el-button>
+      <el-button :plain="true" @click="open3">Warning</el-button>
+      <el-button :plain="true" @click="open1">Message</el-button>
+      <el-button :plain="true" @click="open4">Error</el-button>
+    </div>
+    <el-divider></el-divider>
+
+
+
   </div>
 </template>
 
 <script setup>
 import { ref } from 'vue'
 import { ElMessageBox, ElMessage } from 'element-plus'
+import { MoreFilled,ArrowDown } from '@element-plus/icons-vue'
 const input = ref('')
 const checked1 = ref(true)
 const checked2 = ref(false)
 const value = ref('')
 const dialogVisible = ref(false)
-
+const url =
+  'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg'
 const handleClose = () => {
   ElMessageBox.confirm('Are you sure to close this dialog?')
     .then(() => {
@@ -702,4 +964,155 @@ const treeselectdata = [
     ],
   },
 ]
+const activeNames = ref(['1'])
+const collapsehandleChange = () => {
+  console.log(val)
+}
+
+const currentPage1 = ref(5)
+const disabled = ref(false)
+const handleSizeChange = () => {
+  console.log(`${val} items per page`)
+}
+const handleCurrentChange = () => {
+  console.log(`current page: ${val}`)
+}
+const format = (percentage) => (percentage === 100 ? 'Full' : `${percentage}%`)
+
+const tableData = [
+  {
+    date: '2016-05-03',
+    name: 'Tom',
+    address: 'No. 189, Grove St, Los Angeles',
+  },
+  {
+    date: '2016-05-02',
+    name: 'Tom',
+    address: 'No. 189, Grove St, Los Angeles',
+  },
+  {
+    date: '2016-05-04',
+    name: 'Tom',
+    address: 'No. 189, Grove St, Los Angeles',
+  },
+  {
+    date: '2016-05-01',
+    name: 'Tom',
+    address: 'No. 189, Grove St, Los Angeles',
+  },
+]
+
+const activities = [
+  {
+    content: 'Custom icon',
+    timestamp: '2018-04-12 20:46',
+    size: 'large',
+    type: 'primary',
+    icon: MoreFilled,
+  },
+  {
+    content: 'Custom color',
+    timestamp: '2018-04-03 20:46',
+    color: '#0bbd87',
+  },
+  {
+    content: 'Custom size',
+    timestamp: '2018-04-03 20:46',
+    size: 'large',
+  },
+  {
+    content: 'Custom hollow',
+    timestamp: '2018-04-03 20:46',
+    type: 'primary',
+    hollow: true,
+  },
+  {
+    content: 'Default node',
+    timestamp: '2018-04-03 20:46',
+  },
+]
+
+const Tree = {
+  label: String,
+  children: Array
+};
+ 
+// 处理节点点击事件的函数
+function handleNodeClick(data) {
+  console.log(data);
+}
+ 
+// 树形结构的数据
+const data = [
+  {
+    label: 'Level one 1',
+    children: [
+      {
+        label: 'Level two 1-1',
+        children: [
+          {
+            label: 'Level three 1-1-1',
+          },
+        ],
+      },
+    ],
+  },
+  {
+    label: 'Level one 2',
+    children: [
+      {
+        label: 'Level two 2-1',
+        children: [
+          {
+            label: 'Level three 2-1-1',
+          },
+        ],
+      },
+      {
+        label: 'Level two 2-2',
+        children: [
+          {
+            label: 'Level three 2-2-1',
+          },
+        ],
+      },
+    ],
+  },
+  {
+    label: 'Level one 3',
+    children: [
+      {
+        label: 'Level two 3-1',
+        children: [
+          {
+            label: 'Level three 3-1-1',
+          },
+        ],
+      },
+      {
+        label: 'Level two 3-2',
+        children: [
+          {
+            label: 'Level three 3-2-1',
+          },
+        ],
+      },
+    ],
+  },
+];
+ 
+// el-tree 组件所需的属性配置
+const defaultProps = {
+  children: 'children',
+  label: 'label',
+};
+
+const segmentedvalue = ref('Mon')
+
+const segmentedoptions = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+
+const activeIndex = ref('1')
+const handleSelect = (key, keyPath) => {
+  console.log(key, keyPath)
+}
 </script>
